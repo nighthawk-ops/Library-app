@@ -5,17 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Object constructors</title>
 
+    <!-- Css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- JS  -->
+
     <script src="./script.js" defer></script>
 </head>
 <body>
-    <h1>Library</h1>
+    <!-- NAVBAR -->
+    <nav>
+        <h1>OPEN-LIB</h1>
+        <ul class="navMenu">
+            <form action="">
+                <input type="search" name="serachBAr" id="searchBar" placeholder="Find book">
+            </form>
+        </ul>
+    </nav>
+    
+    <h1>Availab</h1>
     <table class="books-table">
-        <tr>
+        <tr id="heads">
             <th>Title</th>
             <th>Author</th>
             <th>Pages</th>
             <th>Read?</th>
         </tr>
+        <tr id="bodys">
+
+        </tr>
     </table>
+
+    <button id="addBook">
+        Add book
+    </button>
 </body>
 </html>
