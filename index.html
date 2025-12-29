@@ -3,40 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Object constructors</title>
-
-    <!-- Css -->
+    <title>Motomoto's Library</title>
+    <script defer src="book.js"></script>
     <link rel="stylesheet" href="style.css">
-    <!-- JS  -->
-
-    <script src="./script.js" defer></script>
 </head>
 <body>
-    <!-- NAVBAR -->
-    <nav>
-        <h1>OPEN-LIB</h1>
-        <ul class="navMenu">
-            <form action="">
-                <input type="search" name="serachBAr" id="searchBar" placeholder="Find book">
-            </form>
-        </ul>
+    <nav id="header">
+        <div class="left-side">
+             <img src="images\book-open.svg" alt="book-icon">
+            <h1>Welcome to Motomoto's Library</h1>
+        </div>
+
+        <div class="right-side">
+
+        </div>
+
     </nav>
     
-    <h1>Availab</h1>
-    <table class="books-table">
-        <tr id="heads">
-            <th>Title</th>
-            <th>Author</th>
-            <th>Pages</th>
-            <th>Read?</th>
-        </tr>
-        <tr id="bodys">
+    
+    <h2 style="padding-left: 20px;">Available books</h2>
 
-        </tr>
-    </table>
+    <!-- Dailog for adding new book -->
+    <dialog id="bkDialog">
+        <div id="topSection">
+            <h1>Add book</h1>
+        </div>
 
-    <button id="addBook">
-        Add book
-    </button>
+        <form method="dialog">
+            <div id="form-wrapper">
+                <!-- Book name -->
+                <div>
+                    <label for="title">Book title</label>
+                    <input type="text" name="title" id="title">
+                </div>
+
+
+                <!-- Subject -->
+                <div>
+                    <label for="subject">Subject</label>
+                    <input type="text" name="subject" id="subject">
+                </div>
+                
+
+                <!-- grade  -->
+                <div>
+                    <label for="grade">Grade</label>
+                    <input type="text" name="grade" id="grade">
+                </div>
+            
+            </div>
+            
+
+            <!-- Confirm and delete buttons -->
+             <div class="form-btns">
+                <button id="cancel" type="button">Cancel</button>
+                <button id="comfirmBtn" type="submit">Confirm</button>
+             </div>
+
+        </form>
+    </dialog>
+    <button id="addBook" style="margin-left: 20px;">Add book</button>
+
+    <div id="library">
+        
+        <!-- <div class="card">
+            <h1 id="title">Test</h1>
+            <p id="subject">test</p>
+            <p id="grade">test</p>
+            <span>
+                <button id="preview">Preview</button>
+                <button id="download">Download</button>
+            </span>
+        </div> -->
+    </div>
+
+
+
+    <p id="demo"></p>
+    
 </body>
 </html>
